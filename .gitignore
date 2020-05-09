@@ -1,0 +1,5 @@
+Pages/**
+Results/**
+**/__pycache__
+**/venv
+**/*.swp
