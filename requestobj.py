@@ -31,7 +31,7 @@ class RequestObj:
 
     def generate_diff(self, filepath, options):
         output = self.diff_path + self.filename + '.html'
-        codeDiff = CodeDiff(self.save_path + self.filename + self.ext, filepath, name=self.filename)
+        codeDiff = CodeDiff(filepath, self.save_path + self.filename + self.ext, name=self.filename)
         codeDiff.format(options)
         codeDiff.write(output)
 
